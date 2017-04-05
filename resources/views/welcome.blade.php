@@ -77,10 +77,11 @@
                 </div>
             @endif
 
-            <div class="content">
+                <div class="content">
                 <div class="title m-b-md">
                     Laravel
                 </div>
+
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
@@ -91,5 +92,18 @@
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
+        <script>
+            var client = filestack.init('AwyF6m010TpqHDBuk7nNjz');
+            function showPicker() {
+                client.pick({
+                }).then(function(result) {
+                    console.log(JSON.stringify(result.filesUploaded))
+                });
+            }
+        </script>
+        <input type="button" value="Upload" onclick="showPicker()" />
+
     </body>
 </html>

@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', function(){
+    return redirect()->route('products.index');
 });
+
+Route::resource('products', 'ProductController');
+Route::resource('provider', 'ProviderController');
+Route::resource('reseller', 'ResellerController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
