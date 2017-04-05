@@ -1,7 +1,11 @@
-{{--{{ Form::open(array('route' => 'provider.update')) }}--}}
+@extends('layouts.app')
 
-{{ Form::model($provider, array('route' => array('provider.store', $provider->id))) }}
+@section('content')
 
-@include('providers._form')
+    {{ Form::model($provider, array('route' => array('providers.update', $provider->id), 'method' => 'PUT')) }}
 
-{{ Form::close() }}
+        @include('providers._form')
+
+    {{ Form::close() }}
+
+@endsection

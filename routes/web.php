@@ -15,14 +15,27 @@
 //    return view('welcome');
 //});
 
-Route::get('/', function(){
-    return redirect()->route('products.index');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/', 'PageController@home');
+
+    Route::get('profile', 'PageController@profile');
+    Route::get('logout', 'PageController@logout')->name('page.logout');
+
+    // Products
+    Route::resource('products', 'ProductController');
+
+    // Provider
+    Route::resource('providers', 'ProviderController');
+    Route::get('providers/{id}/products', 'ProviderController@products')->name('providers.products');
+
+    // Reseller
+    Route::resource('resellers', 'ResellerController');
+    Route::get('resellers/{id}/products', 'ResellerController@products')->name('resellers.products');
+
+    Route::get('/home', 'HomeController@index');
 });
 
-Route::resource('products', 'ProductController');
-Route::resource('provider', 'ProviderController');
-Route::resource('reseller', 'ResellerController');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+

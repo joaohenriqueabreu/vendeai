@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\Provider;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -34,9 +35,17 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $product = new Product();
+
+        $providers = Provider::pluck('name', 'id');
+
+        $default = 0;
+        if(isset($request->pid))
+            $default = $request->pid;
+
+        return view('products.create',['product' => $product, 'providers' => $providers, 'default' => $default]);
     }
 
     /**
@@ -51,6 +60,8 @@ class ProductController extends Controller
 
         $product->fill($request->all());
         $product->save();
+
+        return $this->index($request);
     }
 
     /**
@@ -61,7 +72,9 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = Product::find($id);
+
+        return view('products.show', ['product' => $product]);
     }
 
     /**
@@ -72,7 +85,13 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product = Product::find($id);
+
+        $providers = Provider::pluck('name', 'id');
+
+        $default = $product->provider->id;
+
+        return view('products.create',['product' => $product, 'providers' => $providers, 'default' => $default]);
     }
 
     /**
@@ -84,7 +103,12 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $product = Product::find($id);
+
+        $product->fill($request->all());
+        $product->save();
+
+        return $this->index($request);
     }
 
     /**
@@ -93,8 +117,11 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        //
+        $product = Product::find($id);
+
+        $product->delete();
+        return $this->index($request);
     }
 }

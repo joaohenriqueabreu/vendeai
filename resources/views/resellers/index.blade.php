@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12">
             <h1 class="page-header">
-                Fornecedores
+                Revendedores
             </h1>
         </div>
 
@@ -15,10 +15,10 @@
                 <div class="panel-heading">
                     <div class="row">
                         <div class="col-md-8">
-                            Gestão dos fornecedores
+                            Gestão dos revedendores
                         </div>
                         <div class="col-md-4">
-                            <a href="{{ route('providers.create') }}" type="button" class="btn btn-success"><i
+                            <a href="{{ route('resellers.create') }}" type="button" class="btn btn-success"><i
                                         class="fa fa-plus"></i>
                                 Adicionar</a>
                         </div>
@@ -42,33 +42,33 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($providers as $k => $provider)
+                            @foreach($resellers as $k => $reseller)
                                 @if($k % 2 == 0)
                                     <tr class="even gradeC">
                                 @else
                                     <tr class="odd gradeX">
                                         @endif
 
-                                        <td>{{ $provider->name }} </td>
-                                        <td>{{ $provider->email }} </td>
-                                        <td>{{ $provider->address }} </td>
-                                        <td>{{ $provider->phone }} </td>
-                                        <td>{{ $provider->title }} </td>
-                                        <td>{{ $provider->created_at }} </td>
-                                        <td>{{ $provider->updated_at }} </td>
+                                        <td>{{ $reseller->name }} </td>
+                                        <td>{{ $reseller->email }} </td>
+                                        <td>{{ $reseller->address }} </td>
+                                        <td>{{ $reseller->phone }} </td>
+                                        <td>{{ $reseller->title }} </td>
+                                        <td>{{ $reseller->created_at }} </td>
+                                        <td>{{ $reseller->updated_at }} </td>
                                         <td align="center">
-                                            {{ Form::open(array('route' => array('providers.edit', $provider->id), 'method' => 'GET')) }}
-                                            {{ Form::button('<i class="fa fa-edit"></i>', ['type'=> 'submit', 'class' => 'btn btn-default', 'href' => route('providers.edit', $provider->id)]) }}
+                                            {{ Form::open(array('route' => array('resellers.edit', $reseller->id), 'method' => 'GET')) }}
+                                            {{ Form::button('<i class="fa fa-edit"></i>', ['type'=> 'submit', 'class' => 'btn btn-default', 'href' => route('resellers.edit', $reseller->id)]) }}
                                             {{ Form::close() }}
 
                                         </td>
                                         <td align="center">
-                                            {{ Form::open(array('route' => array('providers.products', $provider->id), 'method' => 'GET')) }}
-                                            {{ Form::button('<i class="fa fa-barcode"></i>', ['type'=> 'submit', 'class' => 'btn btn-primary', 'href' => route('providers.edit', $provider->id)]) }}
+                                            {{ Form::open(array('route' => array('resellers.products', $reseller->id), 'method' => 'GET')) }}
+                                            {{ Form::button('<i class="fa fa-barcode"></i>', ['type'=> 'submit', 'class' => 'btn btn-primary', 'href' => route('resellers.edit', $reseller->id)]) }}
                                             {{ Form::close() }}
                                         </td>
                                         <td align="center">
-                                            {{ Form::open(array('route' => array('providers.destroy', $provider->id), 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()')) }}
+                                            {{ Form::open(array('route' => array('resellers.destroy', $reseller->id), 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()')) }}
                                             {{ Form::button('<i class="fa fa-times"></i>', ['type'=> 'submit', 'class' => 'btn btn-danger']) }}
                                             {{ Form::close() }}
                                         </td>

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 use App\Product;
 use App\User;
@@ -10,12 +11,16 @@ use App\User;
 class Provider extends Model
 {
     //
+    use SoftDeletes;
 
     protected $fillable = ['name', 'email', 'title', 'address', 'phone', 'user_id'];
 
+    protected $dates = ['deleted_at'];
+
+
     public function products()
     {
-        return $this->hasMany('App\Products');
+        return $this->hasMany('App\Product');
     }
 
     public function user()

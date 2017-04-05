@@ -6,6 +6,20 @@
     background: rgb(255, 255, 255) !important;
 }
 
+.custom-color-white{
+    color: rgb(255, 255, 255) !important;
+}
+
 .custom-section{
     padding: 20px 20px 20px 20px !important;
+}
+
+.custom-mini-image{
+    max-height: 100px !important;
+    max-width: 100px !important;
+}
+
+.custom-login-navbar {
+    background: #f8f8f8 !important;
+    margin-bottom: 0px !important;
 }

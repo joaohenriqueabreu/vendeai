@@ -2,7 +2,7 @@
 
 @section('content')
 
-    {{ Form::model($provider, array('route' => 'provider.store')) }}
+    {{ Form::model($provider, array('route' => 'providers.store')) }}
 
         @include('providers._form')
 

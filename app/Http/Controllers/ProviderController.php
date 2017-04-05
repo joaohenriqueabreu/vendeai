@@ -6,6 +6,8 @@ use App\Provider;
 use App\Product;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class ProviderController extends Controller
 {
@@ -16,7 +18,9 @@ class ProviderController extends Controller
      */
     public function index()
     {
-        //
+        $providers = Provider::all();
+
+        return view('providers.index', ['providers' => $providers]);
     }
 
     /**
@@ -28,7 +32,7 @@ class ProviderController extends Controller
     {
         $provider = new Provider();
 
-        return view('providers.create', ['provider' => $provider]);
+        return view('providers.create', ['provider' => $provider, 'user_id' => Auth::id()]);
     }
 
     /**
@@ -44,7 +48,7 @@ class ProviderController extends Controller
         $provider->fill($request->all());
         $provider->save();
 
-        return view('products.index');
+        return redirect()->route('products.index');
     }
 
     /**
@@ -55,7 +59,7 @@ class ProviderController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('products.index');
     }
 
     /**
@@ -66,7 +70,9 @@ class ProviderController extends Controller
      */
     public function edit($id)
     {
-        //
+        $provider = Provider::find($id);
+
+        return view('providers.edit', ['provider' => $provider, 'user_id' => Auth::id()]);
     }
 
     /**
@@ -78,7 +84,12 @@ class ProviderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $provider = Provider::find($id);
+
+        $provider->fill($request->all());
+        $provider->save();
+
+        return redirect()->route('products.index');
     }
 
     /**
@@ -87,8 +98,32 @@ class ProviderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        //
+        $provider = Provider::find($id);
+
+        // Primeiro deleta os produtos
+        foreach($provider->products as $product){
+            $product->delete();
+        }
+
+        $provider->delete();
+
+        return redirect()->route('products.index');
+    }
+
+    // Custom routes
+    public function products($id)
+    {
+//        $user_id = Auth::id();
+//
+//        if($user_id != $id){
+//            return redirect()->route('products.index');
+//
+//        } else {
+            $provider = Provider::find($id);
+
+            return view('providers.products', ['provider' => $provider]);
+//        }
     }
 }

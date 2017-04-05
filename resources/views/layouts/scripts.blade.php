@@ -23,3 +23,7 @@
 </script>
 
 <script src="{{ asset('js/angular/master.js') }}"></script>
+
+{{-- Filestack --}}
+<script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+{{ Html::script(asset('js/custom.js')) }}

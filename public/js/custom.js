@@ -198,3 +198,16 @@
     });
 
 }(jQuery));
+
+function sendFile(url){
+    $("input[name=url]").val(url);
+}
+
+function confirmDelete()
+{
+    var x = confirm("Tem certeza que deseja apagar esse registro?");
+    if (x)
+        return true;
+    else
+        return false;
+}

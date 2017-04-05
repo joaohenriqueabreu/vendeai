@@ -131,6 +131,18 @@ background-color: #5cb85c;
 color:#fff;
 border-top: 0px solid #fff;
 }
+
+.back-footer-green-1 {
+    background-color: #5cd85c;
+    color:#fff;
+    border-top: 0px solid #fff;
+}
+
+.back-footer-green-2 {
+    background-color: #5cf85c;
+    color:#fff;
+    border-top: 0px solid #fff;
+}
  .back-footer-red {
 background-color: #F0433D;
 color:#fff;
@@ -141,6 +153,13 @@ background-color: #4CB1CF;
 color:#fff;
 border-top: 0px solid #fff;
 }
+
+.back-footer-dark-blue {
+    background-color: rgb(0, 32, 96) !important;
+    color:#fff;
+    border-top: 0px solid #fff;
+}
+
  .back-footer-brown {
 background-color: #f0ad4e;
 color:#fff;
