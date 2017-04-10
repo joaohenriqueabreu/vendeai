@@ -39,9 +39,19 @@ class PageController extends Controller
         return view('landing.revendedor');
     }
 
+    public function newReseller()
+    {
+        return view('landing.parts.forms.revendedor');
+    }
+
     public function provider()
     {
         return view('landing.parceiro');
+    }
+
+    public function newProvider()
+    {
+        return view('landing.parts.forms.parceiro');
     }
 
 }

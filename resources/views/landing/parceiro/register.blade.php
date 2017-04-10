@@ -4,7 +4,7 @@
         <strong>Quero ser parceiro e disponibilizar meus produtos</strong>
 
             <div class="custom-mobile-padding-20">
-                <a href="/novo-parceiro"
+                <a href="{{ route('pages.provider.new') }}"
                    class="btn-u rounded-5x btn-u-custom-green custom-color-green custom-bg-white btn-u-lg"
                    type="button">
                     <strong>Cadastrar agora!</strong>

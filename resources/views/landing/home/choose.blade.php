@@ -27,7 +27,7 @@
             <br>
 
             <div layout="column" layout-align="center center">
-                <a hide-xs hide-sm href="<?php echo $route ?>" class="btn-u rounded-5x btn-u-custom-green custom-bg-white custom-color-dark-blue custom-padding-20 custom-hover-bg-white custom-hover-color-dark-blue btn-u-lg custom-header-text"
+                <a hide-xs hide-sm href="{{ route('pages.reseller') }}" class="btn-u rounded-5x btn-u-custom-green custom-bg-white custom-color-dark-blue custom-padding-20 custom-hover-bg-white custom-hover-color-dark-blue btn-u-lg custom-header-text"
                    type="button">
                     <strong>Quero vender</strong>
                 </a>
@@ -69,7 +69,7 @@
             <br>
 
             <div layout="column" layout-align="center center">
-                <a hide-xs hide-sm href="<?php echo $route ?>"
+                <a hide-xs hide-sm href="{{ route('pages.provider') }}"
                    class="btn-u rounded-5x btn-u-custom-green custom-bg-green custom-color-white custom-padding-20 custom-hover-bg-green custom-hover-color-white btn-u-lg custom-header-text"
                    type="button">
                     <strong>Quero disponibilizar produtos</strong>

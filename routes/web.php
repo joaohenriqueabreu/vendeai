@@ -45,8 +45,11 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::get('/', 'PageController@landing')->name('pages.landing');
-Route::get('revendedor', 'PageController@reseller')->name('pages.reseller');
-Route::get('parceiro', 'PageController@provider')->name('pages.provider');
+Route::get('revendedores', 'PageController@reseller')->name('pages.reseller');
+Route::get('revendedores/novo', 'PageController@newReseller')->name('pages.reseller.new');
+
+Route::get('parceiros', 'PageController@provider')->name('pages.provider');
+Route::get('parceiros/novo', 'PageController@newProvider')->name('pages.provider.new');
 
 Auth::routes();
 
