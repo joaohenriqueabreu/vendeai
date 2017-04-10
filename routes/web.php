@@ -16,25 +16,37 @@
 //});
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/', 'PageController@home');
+    Route::group(['prefix' => 'v1'], function () {
 
-    Route::get('profile', 'PageController@profile');
-    Route::get('logout', 'PageController@logout')->name('page.logout');
+        Route::get('/', 'PageController@home');
 
-    // Products
-    Route::resource('products', 'ProductController');
+        Route::get('profile', 'PageController@profile')->name('pages.profile');
+        Route::get('account', 'PageController@account')->name('pages.account');
+        Route::get('logout', 'PageController@logout')->name('pages.logout');
 
-    // Provider
-    Route::resource('providers', 'ProviderController');
-    Route::get('providers/{id}/products', 'ProviderController@products')->name('providers.products');
+        // Products
+        Route::resource('products', 'ProductController');
 
-    // Reseller
-    Route::resource('resellers', 'ResellerController');
-    Route::get('resellers/{id}/products', 'ResellerController@products')->name('resellers.products');
+        // Provider
+        Route::resource('providers', 'ProviderController');
+        Route::get('providers/{provider}/products', 'ProviderController@products')->name('providers.products');
 
-    Route::get('/home', 'HomeController@index');
+        // Reseller
+        Route::resource('resellers', 'ResellerController');
+        Route::get('resellers/{reseller}/products', 'ResellerController@products')->name('resellers.products');
+        Route::get('resellers/{reseller}/products/search', 'ResellerController@search')->name('resellers.products.search');
+        Route::get('resellers/{reseller}/products/search/reset', 'ResellerController@searchReset')->name('resellers.products.search.reset');
+        Route::get('resellers/{reseller}/products/search/new', 'ResellerController@searchNew')->name('resellers.products.search.new');
+        Route::get('resellers/{reseller}/products/{product}', 'ResellerController@match')->name('resellers.products.match');
+        Route::delete('resellers/{reseller}/products/{product}', 'ResellerController@unmatch')->name('resellers.products.unmatch');
+
+        Route::get('/home', 'HomeController@index');
+    });
 });
 
+Route::get('/', 'PageController@landing')->name('pages.landing');
+Route::get('revendedor', 'PageController@reseller')->name('pages.reseller');
+Route::get('parceiro', 'PageController@provider')->name('pages.provider');
 
 Auth::routes();
 

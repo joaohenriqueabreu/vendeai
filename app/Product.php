@@ -34,4 +34,9 @@ class Product extends Model
     {
         return $this->belongsToMany('App\Reseller');
     }
+
+    public function hasReseller($id)
+    {
+        return $this->resellers()->find($id);
+    }
 }

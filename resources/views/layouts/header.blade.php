@@ -9,7 +9,6 @@
         <a class="navbar-brand" href="\">Vende aí</a>
     </div>
 
-
     <ul class="nav navbar-nav navbar-right">
         <!-- Authentication Links -->
         @if (Auth::guest())

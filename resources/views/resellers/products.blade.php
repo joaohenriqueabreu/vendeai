@@ -21,7 +21,7 @@
                             Gestão de produtos
                         </div>
                         <div class="col-md-4">
-                            <a href="{{ route('products.index') }}?pid={{ $reseller->id }}" type="button"
+                            <a href="{{ route('resellers.products.search', $reseller->id) }}" type="button"
                                class="btn btn-success"><i class="fa fa-plus"></i>
                                 Adicionar</a>
                         </div>
@@ -44,7 +44,7 @@
                                 <th>Atualização</th>
                                 {{--<th>Editar</th>--}}
                                 <th>Ver</th>
-                                <th>Apagar</th>
+                                <th>Remover</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -78,7 +78,7 @@
                                         </td>
 
                                         <td align="center">
-                                            {{ Form::open(array('route' => array('products.destroy', $product->id), 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()')) }}
+                                            {{ Form::open(array('route' => array('resellers.products.unmatch', $reseller->id, $product->id), 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()')) }}
                                             {{ Form::button('<i class="fa fa-times"></i>', ['type'=> 'submit', 'class' => 'btn btn-danger']) }}
                                             {{ Form::close() }}
                                         </td>

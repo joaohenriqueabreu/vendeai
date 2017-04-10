@@ -17,10 +17,31 @@ class PageController extends Controller
         return view('auth.profile');
     }
 
+    public function account()
+    {
+        return view('auth.account');
+    }
+
     public function logout()
     {
         Auth::logout();
 
         return redirect()->route('login');
     }
+
+    public function landing()
+    {
+        return view('landing.home');
+    }
+
+    public function reseller()
+    {
+        return view('landing.revendedor');
+    }
+
+    public function provider()
+    {
+        return view('landing.parceiro');
+    }
+
 }

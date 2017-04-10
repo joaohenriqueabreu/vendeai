@@ -23,3 +23,11 @@
     background: #f8f8f8 !important;
     margin-bottom: 0px !important;
 }
+
+.custom-small-padding-bottom{
+    padding-bottom: 10px !important;
+}
+
+.custom-product-card{
+    text-decoration: none !important;
+}
