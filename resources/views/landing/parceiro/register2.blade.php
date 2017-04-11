@@ -1,7 +1,7 @@
 <div class="custom-background-9 custom-super-section" layout="column" layout-align="center center">
 
     <h3 class="custom-color-white" align="center">
-        <strong>Ta esperando o que?</strong>
+        <strong>Ta esperando o quê?</strong>
     </h3>
 
     <div class="custom-mobile-padding-20">

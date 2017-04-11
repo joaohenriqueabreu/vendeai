@@ -77,12 +77,12 @@
         <div class="custom-bg-grice custom-padding-20">
             <div layout="column">
                 <h4 class="custom-color-green" align="justify">Na <span class="custom-brand-green-small">Vende aí!</span> conectamos seus produtos a
-                    <span class="custom-brand-green-small">revendedores virtuais</span>. Mas quem são eles? Robôs? Matrix? Não, não, pode ficar tranquilo!
-                    Os revendedores virtuais são pessoas que estão buscando uma renda extra e se cadastram na Vende aí!
-                    para vender os <span class="custom-brand-green-small">seus produtos</span> e de outros fornecedores.
+                    <span class="custom-brand-green-small">revendedores virTuais</span>. Mas quem são eles? Robôs? Matrix? Não, não, pode ficar tranquilo!
+                    Os revendedores virtuais são pessoas que estão buscando uma renda extra e se cadastram na nossa plataforma
+                    para vender os <span class="custom-brand-green-small">seus produTos</span> e de outros fornecedores.
                     Ele receberá uma loja virtual e poderá vender para seus contatos.
 
-                    A Vende aí! cuida de todo esse canal para você e para eles.<br><br>
+                    Cuidamos de todo esse canal para você e para eles.<br><br>
 
                     Sabe por que escolhemos fazer desta forma? <span class="custom-brand-green-small">O poder das redes.</span>
                     Existe uma coisa que mesmo com o passar do tempo, ainda é a ferramenta mais poderosa de venda, ela se chama
@@ -111,8 +111,7 @@
             <h1 class="custom-color-green">
                 <strong>O comércio online está crescendo cada vez mais e se mostrando uma ótima oportunidade de
                     negócios.
-                    Por que não fazer parte disso e começar a lucrar agora mesmo? Veja alguns números do mercado de
-                    e-commerce</strong></h1>
+                    Por que não fazer parte disso e começar a lucrar agora mesmo? </strong></h1>
             <br><br>
 
             <div layout="row" class="">

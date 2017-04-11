@@ -90,13 +90,13 @@
             <div layout="column" class="custom-section">
                 <h4 align="justify" class="custom-color-green">Na <span
                             class="custom-brand-green-small">Vende aí!</span> conectamos seus produtos a
-                    <span class="custom-brand-green-small">revendedores virtuais</span>. Mas quem são eles? Robôs?
+                    <span class="custom-brand-green-small">revendedores virTuais</span>. Mas quem são eles? Robôs?
                     Matrix? Não, não, pode ficar tranquilo!
-                    Os revendedores virtuais são pessoas que estão buscando uma renda extra e se cadastram na Vende aí!
-                    para vender os <span class="custom-brand-green-small">seus produtos</span> e de outros fornecedores.
+                    Os revendedores virtuais são pessoas que estão buscando uma renda extra e se cadastram na nossa plataforma
+                    para vender os <span class="custom-brand-green-small">seus produTos</span> e de outros fornecedores.
                     Ele receberá uma loja virtual e poderá vender para seus contatos.
 
-                    A Vende aí! cuida de todo esse canal para você e para eles.<br><br>
+                    Cuidamos de todo esse canal para você e para eles.<br><br>
 
                     Sabe por que escolhemos fazer desta forma? <span
                             class="custom-brand-green-small">O poder das redes.</span>
