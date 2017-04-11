@@ -17,7 +17,7 @@
                     <p align="justify" class="custom-color-white"><strong>
                             Na <span class="custom-brand-white-small">Vende aí</span> você escolhe produtos dos nossos
                             parceiros e recebe uma loja virtual completa.
-                            <br><br> Divulgue e venda para seus contatos e receba comissões.
+                            <br><br> Divulgue, venda e receba comissões.
                             <br><br>
                         </strong>
                     </p>
