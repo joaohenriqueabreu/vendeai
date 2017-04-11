@@ -38,7 +38,7 @@
                 </strong>
             </h2>
 
-            <a href="<?php echo $route ?>"
+            <a href="{{ route('pages.provider') }}"
                class="btn-u rounded-5x btn-u-custom-green custom-bg-green
                     custom-color-white custom-padding-20 btn-u-lg custom-header-text"
                type="button">
