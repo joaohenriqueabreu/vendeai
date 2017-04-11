@@ -392,6 +392,11 @@
     padding-bottom: 20px !important;
 }
 
+.custom-margin-0{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
 .custom-heading {
     font-size: 35px !important;
     line-height: 50px !important;

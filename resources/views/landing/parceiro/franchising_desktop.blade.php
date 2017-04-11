@@ -16,8 +16,6 @@
             <h4 class="custom-color-green" align="justify">No Brasil temos exemplos do programa <a href="https://www.magazinevoce.com.br/">Magaize
                     Você</a>
                 da Magazine Luiza e o <a href="http://www.polishop.vc/store/polishop">Polishop com vc</a> da Polishop.
-<!--            </h4>-->
-<!--            <h4 class="custom-color-green" align="justify">-->
                 Já no exterior a gigante chinesa Aliexpress possui uma solução de dropshipping preparada
                 para entregas no mundo todo.
                 Amazon e Ebay também contam com algum tipo de solução dessa natureza.</h4>
@@ -39,27 +37,27 @@
 
         <div class="custom-bg-grice custom-padding-20">
             <div layout="column">
-                <h4 class="custom-color-green">Sabemos que um bom time de vendas faz a diferença. Mas imagine o custo para levar seus produtos para todo o Brasil? </h4> <br><br>
+                <h4 class="custom-color-green" align="justify">Sabemos que um bom time de vendas faz a diferença. Mas imagine o custo para levar seus produtos para todo o Brasil? </h4> <br><br>
             </div>
 
             <div layout="row">
                 <div flex="10"></div>
-                <div flex="20"
+                <div flex="20" layout-align="center center" layout="row"
                      class="btn-u rounded-5x btn-u-custom-green custom-bg-green btn-u-lg">
-                    <h2 class="custom-color-white" align="center"><strong>Encargos</strong>
-                    </h2>
+                    <h3 class="custom-margin-0 custom-color-white" align="center"><strong>Encargos</strong>
+                    </h3>
                 </div>
                 <div flex="10"></div>
                 <div flex="20"
                      class="btn-u rounded-5x btn-u-custom-green custom-bg-green btn-u-lg">
-                    <h2 class="custom-color-white" align="center"><strong>Treinamentos</strong>
-                    </h2>
+                    <h3 class="custom-margin-0 custom-color-white" align="center"><strong>Treinamentos</strong>
+                    </h3>
                 </div>
                 <div flex="10"></div>
-                <div flex="20"
+                <div flex="20" layout="row" layout-align="center center"
                      class="btn-u rounded-5x btn-u-custom-green custom-bg-green btn-u-lg">
-                    <h2 class="custom-color-white" align="center"><strong>Transporte</strong>
-                    </h2>
+                    <h3 class="custom-margin-0 custom-color-white" align="center"><strong>Transporte</strong>
+                    </h3>
                 </div>
                 <div flex="10"></div>
             </div>
@@ -67,9 +65,9 @@
             <br><br>
 
             <div layout="column">
-                <h4 class="custom-color-green">Na <span class="custom-brand-green-small">Vende aí!</span>&nbsp; seu custo com o time de vendas é de
+                <h4 class="custom-color-green" align="justify">Na <span class="custom-brand-green-small">Vende aí!</span>&nbsp; seu custo com o time de vendas é de
                     <span class="custom-brand-green">R$ 0,00</span>.</h4><br>
-                <h4 class="custom-color-green">E mais, você poderá disponibilizar vídeos e materiais dos seus produtos e marca online gratuitamente
+                <h4 class="custom-color-green" align="justify">E mais, você poderá disponibilizar vídeos e materiais dos seus produtos e marca online gratuitamente
                     para que seus revendedores virem verdadeiras máquinas de vendas</h4>
             </div>
         </div>
@@ -78,7 +76,7 @@
 
         <div class="custom-bg-grice custom-padding-20">
             <div layout="column">
-                <h4 class="custom-color-green">Na <span class="custom-brand-green-small">Vende aí!</span> conectamos seus produtos a
+                <h4 class="custom-color-green" align="justify">Na <span class="custom-brand-green-small">Vende aí!</span> conectamos seus produtos a
                     <span class="custom-brand-green-small">revendedores virtuais</span>. Mas quem são eles? Robôs? Matrix? Não, não, pode ficar tranquilo!
                     Os revendedores virtuais são pessoas que estão buscando uma renda extra e se cadastram na Vende aí!
                     para vender os <span class="custom-brand-green-small">seus produtos</span> e de outros fornecedores.
@@ -89,13 +87,13 @@
                     Sabe por que escolhemos fazer desta forma? <span class="custom-brand-green-small">O poder das redes.</span>
                     Existe uma coisa que mesmo com o passar do tempo, ainda é a ferramenta mais poderosa de venda, ela se chama
                     <span class="custom-brand-green-small">indicação</span>. Uma indicação ou recomendação de um produto
-                    por um amigo ou conhecido possui uma taxa de conversão entre 50% a 80%. Outro detalhe importante, o alcance
+                    por um amigo ou conhecido possui uma taxa de conversão entre 50% a 80% maior. Outro detalhe importante, o alcance
                     das redes é calculado pelo quadrado do tamanho da rede, ou seja, seu produto presente em 1.000 lojas de
                     revendedores virtuais, significa um alcance orgânico de 1.000.000 (um milhão de pessoas!).
 
                 </h4>
 
-                <h4 class="custom-color-green">
+                <h4 class="custom-color-green" align="justify">
                     Acreditamos na real trasformação que as redes pessoais trazem para os mercados e como as pessoas
                     podem se tornar agentes das marcas. Quem sabe até seus revendedores virtuais não estarão
                     fazendo públicações patrocinadas nas suas redes sociais por você?
@@ -105,96 +103,7 @@
 
         <br>
 
-<!--        <div layout="row">-->
-<!--            <div layout="column" layout-align="start center" flex class="custom-bg-green custom-padding-20">-->
-<!---->
-<!--                <h4 class="custom-color-dark-blue"><strong>-->
-<!--                        Time de vendas-->
-<!--                    </strong>-->
-<!--                </h4>-->
-<!---->
-<!--                <div layout="column" layout-align="start start">-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-check"></i> &nbsp;Maior controle </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Alto investimento com os-->
-<!--                        encargos-->
-<!--                        trabalhistas </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Custo e alcance da prospecção-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!---->
-<!--            <div layout="column" layout-align="start center" flex class="custom-bg-green-1 custom-padding-20">-->
-<!--                <h4 class="custom-color-dark-blue"><strong>-->
-<!--                        Marketing digital-->
-<!--                    </strong>-->
-<!--                </h4>-->
-<!---->
-<!--                <div layout="column" layout-align="start start">-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-check"></i> &nbsp;Grande alcance das redes sociais-->
-<!--                    </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Retorno proporcional ao-->
-<!--                        investimento-->
-<!--                    </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Exige conhecimento e capacitação-->
-<!--                    </p>-->
-<!--                </div>-->
-<!---->
-<!--            </div>-->
-<!---->
-<!--            <div layout="column" layout-align="start center" flex class="custom-bg-green-2 custom-padding-20">-->
-<!--                <h4 class="custom-color-dark-blue"><strong>-->
-<!--                        Revenda-->
-<!--                    </strong>-->
-<!--                </h4>-->
-<!---->
-<!--                <div layout="column" layout-align="start start">-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-check"></i> &nbsp;Diminuição do estoque parado-->
-<!--                    </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Prospecção de revendedores-->
-<!--                        qualificados </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Custo e alcance do recrutamento-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--            <div layout="column" layout-align="start center" flex class="custom-bg-green-3 custom-padding-20">-->
-<!--                <h4 class="custom-color-dark-blue">-->
-<!--                    <strong>-->
-<!--                        E-commerce-->
-<!--                    </strong>-->
-<!--                </h4>-->
-<!---->
-<!--                <div layout="column" layout-align="start start">-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-check"></i> &nbsp;Alcance nacional e internacional-->
-<!--                    </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Exige investimento em marketing-->
-<!--                        digital </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Exige infraestrutura de-->
-<!--                        tecnologia e-->
-<!--                        administração </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--            <div layout="column" layout-align="start center" flex class="custom-bg-green-4 custom-padding-20">-->
-<!--                <h4 class="custom-color-dark-blue"><strong>-->
-<!--                        Afiliados-->
-<!--                    </strong>-->
-<!--                </h4>-->
-<!---->
-<!--                <div layout="column" layout-align="start start">-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-check"></i> &nbsp;Aumenta a visibilidade para sua-->
-<!--                        plataforma </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Exige infraestrutura tecnologia-->
-<!--                    </p>-->
-<!--                    <p class="custom-color-dark-blue"><i class="fa fa-close"></i> &nbsp;Depende muito da visibilidade-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--        </div>-->
-
-        <br><br>
+        <hr>
 
         <br>
 
@@ -209,19 +118,19 @@
             <div layout="row" class="">
 
                 <div flex layout="column" layout-align="center center">
-                    <img class="custom-mini-image" src="../../assets/img/icons/presentation.png"><br>
+                    <img class="custom-mini-image" src="{{ asset('img/icons/presentation.png') }}"><br>
                     <h3 class="custom-data-text custom-color-green custom-desc-text"><strong>7,4%</strong> de
                         aumento do faturamento em 2016</h3>
                 </div>
 
                 <div flex layout="column" layout-align="center center">
-                    <img class="custom-mini-image" src="../../assets/img/icons/receipt.png"><br>
+                    <img class="custom-mini-image" src="{{ asset('img/icons/receipt.png') }}"><br>
                     <h3 class="custom-data-text custom-color-green"><strong>8,0%</strong> de aumento no ticket médio
                         nas compras online</h3>
                 </div>
 
                 <div flex layout="column" layout-align="center center">
-                    <img class="custom-mini-image" src="../../assets/img/icons/customer-service%20(2).png"><br>
+                    <img class="custom-mini-image" src="{{ asset('img/icons/customer-service%20(2).png') }}"><br>
                     <h3 class="custom-data-text custom-color-green"><strong>22,0%</strong> de aumento no número de
                         consumidores ativos online</h3>
                 </div>

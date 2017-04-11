@@ -16,7 +16,7 @@
         <div layout="row">
             <div flex="10"></div>
             <div flex="80" class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h2 class="custom-color-white custom-hover-color-white" align="center"><strong>R$ 44.167,00</strong>
+                <h2 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>R$ 44.167,00</strong>
                 </h2>
             </div>
             <div flex="10"></div>
@@ -33,7 +33,7 @@
         <br><br>
 
         <div layout="column">
-            <h4>Na <span class="custom-brand-small">Vende aí!</span>&nbsp; seu investimento financeiro inicial é de <span class="custom-brand">R$ 0,00</span>.<br>
+            <h4 class="custom-color-dark-blue" align="justify">Na <span class="custom-brand-small">Vende aí!</span>&nbsp; seu investimento financeiro inicial é de <span class="custom-brand">R$ 0,00</span>.<br>
                 O investimento que a gente precisa é a sua dedicação!
             </h4>
             <br><br>
@@ -56,7 +56,7 @@
             <div flex="10"></div>
             <div flex="80"
                  class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h1 class="custom-color-white custom-hover-color-white" align="center"><strong>107 dias</strong>
+                <h1 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>107 dias</strong>
                 </h1>
             </div>
             <div flex="10"></div>
@@ -89,25 +89,25 @@
 
         <div layout="column">
             <div class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h3 class="custom-color-white custom-hover-color-white" align="center"><strong>Mostruário</strong></h3>
+                <h3 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>Mostruário</strong></h3>
             </div>
 
             <br>
 
             <div class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h3 class="custom-color-white custom-hover-color-white" align="center"><strong>Logística</strong></h3>
+                <h3 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>Logística</strong></h3>
             </div>
 
             <br>
 
             <div class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h3 class="custom-color-white custom-hover-color-white" align="center"><strong>Contratos</strong></h3>
+                <h3 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>Contratos</strong></h3>
             </div>
 
             <br>
 
             <div class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h3 class="custom-color-white custom-hover-color-white" align="center"><strong>Reclamações</strong></h3>
+                <h3 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>Reclamações</strong></h3>
             </div>
         </div>
 

@@ -14,7 +14,7 @@
                 <img class="custom-mini-image" src="{{ asset('img/icons/network (1).png') }}">
                 <h3 class="custom-color-white"><strong>Conectamos</strong></h3>
                 <p class="custom-color-white" align="justify">
-                    Somos uma plataforma online onde parceiros podem cadastrar e disponizar seus produtos, para
+                    Somos uma plataforma online onde parceiros podem cadastrar e disponibilizar seus produtos, para
                     que pessoas interessadas em montar seu negócio virtual, escolham os produtos e recebam
                     lojas virtuais completas para vende-los e receber comissões. Nos somos uma ferramenta que cuida
                     de todo o canal e interação das vendas entre fornecedores e revendedores.
@@ -42,7 +42,7 @@
                 <img class="custom-mini-image" src="{{ asset('img/icons/showman.png') }}">
                 <h3 class="custom-color-white"><strong>com o Rodrigo </strong></h3>
                 <p class="custom-color-white" align="justify">
-                    Rodrigo trabalhou com jogos digitais, mora em Sergipe e recentemente ficou desempregado.
+                    Rodrigo trabalhou com jogos digitais, mora em Tocantins e recentemente ficou desempregado.
                     Ele quer uma opção de renda, mas não tem dinheiro para investir.
                     Encontrou a <span class="custom-brand-white-small">Vende aí</span>, e decidiu testar.
                     Montou sua loja com os produtos da Gabi e outros.
@@ -61,7 +61,7 @@
                 <h3 class="custom-color-white custom-home-text" align="center">
                     <strong>
                         Assim como a Gabi e o Rodrigo, a <span class="custom-brand-white-small">Vende aí</span>
-                        &nbsp;pode conectar seus produtos a diversos revendedores em todo país
+                        &nbsp;pode conectar seus produtos a diversos revendedores em todo país de forma rápida, fácil e online
                     </strong>
                 </h3>
             </div>
@@ -69,24 +69,23 @@
             <div class="custom-home-text">
                 <p class="custom-color-white" align="justify">
                     <br>
-                    Que se tornarão embaixadores do seu produto e sua marca em suas redes pessoais e além,
+                    Que se tornarão embaixadores de suas marcas nas suas redes pessoais e além,
                     muito além. Aqui você não precisa investir em um exército de vendedores, a
                     <span class="custom-brand-white-small">Vende aí</span> encontra eles para você.
                     Você só paga pelas vendas realizadas.
 
                     Que tal curtir uma publicação patrocinada do seu próprio produto, feita por outra
-                    pessoa que você ainda nem conhece? Na <span class="custom-brand-white-small">Vende aí</span>
-                    isso é possível.
+                    pessoa que você ainda nem conhece, sem ter investido dinheiro ou tempo para isso?
+                    Na <span class="custom-brand-white-small">Vende aí</span> isso é possível.
                 </p>
                 <h3 class="custom-color-white custom-home-text" align="center">
                     <strong>
-                        Para você aumentar suas vendas! <br><br>
+                        {{--Para você aumentar suas vendas! <br><br>--}}
+                        <br>
                         Na <span class="custom-brand-white-small">Vende aí</span> você não precisa mais fazer
                         tudo sozinho.
                     </strong>
                 </h3>
-
-                {{--<p align="center" class="custom-color-white"></p>--}}
             </div>
         </div>
 

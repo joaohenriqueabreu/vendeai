@@ -8,7 +8,7 @@
 
     <div class="custom-bg-ice custom-padding-20">
         <div layout="column">
-            <h4>Em 2017 <span class="custom-palavra-chave-blue">investimento inicial</span> médio para abrir uma Microfranquia
+            <h4 class="custom-color-dark-blue" align="justify">Em 2017 <span class="custom-palavra-chave-blue">investimento inicial</span> médio para abrir uma Microfranquia
                 é de: </h4> <br><br>
         </div>
 
@@ -16,7 +16,7 @@
             <div flex="30"></div>
             <div flex="40"
                  class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h2 class="custom-color-white custom-hover-color-white" align="center"><strong>R$ 44.167,00</strong>
+                <h2 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>R$ 44.167,00</strong>
                 </h2>
             </div>
             <div flex="30"></div>
@@ -33,11 +33,11 @@
         <br><br>
 
         <div layout="column">
-            <h4>Na <span class="custom-brand-small">Vende aí!</span>&nbsp; seu investimento financeiro inicial é de <span class="custom-brand">R$ 0,00</span>.<br>
+            <h4 class="custom-color-dark-blue" align="justify">Na <span class="custom-brand-small">Vende aí!</span>&nbsp; seu investimento financeiro inicial é de <span class="custom-brand">R$ 0,00</span>.<br>
                 O investimento que a gente precisa é a sua dedicação!
             </h4>
             <br><br>
-            <h4>Em outros modelos tradicionais você tem que investir em estoque inicial, mostruário ou algum tipo de infraestrutura.
+            <h4 class="custom-color-dark-blue" align="justify">Em outros modelos tradicionais você tem que investir em estoque inicial, mostruário ou algum tipo de infraestrutura.
                 Até mesmo em modelos inovadores como a Uber ou Cabify você precisa investir, no caso ter um carro próprio para poder rodar </h4>
         </div>
     </div>
@@ -46,14 +46,14 @@
 
     <div class="custom-bg-ice custom-padding-20">
         <div layout="column">
-            <h4>Segundo dados do Banco Mundial o <span class="custom-palavra-chave-blue">tempo médio</span> para abrir uma empresa no Brasil é de:</h4> <br><br>
+            <h4 class="custom-color-dark-blue" align="justify">Segundo dados do Banco Mundial o <span class="custom-palavra-chave-blue">tempo médio</span> para abrir uma empresa no Brasil é de:</h4> <br><br>
         </div>
 
         <div layout="row">
             <div flex="30"></div>
             <div flex="40"
                  class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h2 class="custom-color-white custom-hover-color-white" align="center"><strong>107 dias</strong>
+                <h2 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>107 dias</strong>
                 </h2>
             </div>
             <div flex="30"></div>
@@ -68,7 +68,7 @@
         <br><br>
 
         <div layout="column">
-            <h4>Na <span class="custom-brand-small">Vende aí!</span>&nbsp; você leva poucos minutos para montar sua loja e começar seu negócio virtual</h4>
+            <h4 class="custom-color-dark-blue" align="justify">Na <span class="custom-brand-small">Vende aí!</span>&nbsp; você leva poucos minutos para montar sua loja e começar seu negócio virtual</h4>
             <!--            <br><br>-->
         </div>
     </div>
@@ -77,7 +77,7 @@
 
     <div class="custom-bg-ice custom-section">
         <div layout="column">
-            <h4>Um negócio naturalmente envolve uma série de complexidades e até mesmo os de renda-extra não fogem da regra. Temos, por exemplo, que cuidar
+            <h4 class="custom-color-dark-blue" align="justify">Um negócio naturalmente envolve uma série de complexidades e até mesmo os de renda-extra não fogem da regra. Temos, por exemplo, que cuidar
                 em vendas diretas ou revenda de:
             </h4>
 
@@ -86,32 +86,32 @@
 
         <div layout="row" layout-align="center center">
             <div class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h3 class="custom-color-white custom-hover-color-white" align="center"><strong>Mostruário</strong></h3>
+                <h3 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>Mostruário</strong></h3>
             </div>
 
             &nbsp;&nbsp;&nbsp;&nbsp;
 
             <div class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h3 class="custom-color-white custom-hover-color-white" align="center"><strong>Logística</strong></h3>
+                <h3 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>Logística</strong></h3>
             </div>
 
             &nbsp;&nbsp;&nbsp;&nbsp;
 
             <div class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h3 class="custom-color-white custom-hover-color-white" align="center"><strong>Contratos</strong></h3>
+                <h3 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>Contratos</strong></h3>
             </div>
 
             &nbsp;&nbsp;&nbsp;&nbsp;
 
             <div layout="row" layout-align="center center" class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg">
-                <h3 class="custom-color-white custom-hover-color-white" align="center"><strong>Reclamações</strong></h3>
+                <h3 class="custom-margin-0 custom-color-white custom-hover-color-white" align="center"><strong>Reclamações</strong></h3>
             </div>
         </div>
 
         <br>
 
         <div layout="column">
-            <h4>Na <span class="custom-brand-small">Vende aí!</span>&nbsp; queremos possibilitar a você a maneira mais
+            <h4 class="custom-color-dark-blue" align="justify">Na <span class="custom-brand-small">Vende aí!</span>&nbsp; queremos possibilitar a você a maneira mais
                 <span class="custom-brand-small">Fácil</span> &nbsp; do mundo para ter seu negócio online. Oferecendo uma variedade de opções de produtos queremos que você possa
                 <span class="custom-brand-small">TesTar</span> a plataforma e encontrar aqueles que mais vendem para o seu público, seus contatos,
                 trocando rapidamente os produtos em sua loja se for necessário. Imagina fazer isso com uma loja de rua já construída? <br><br>
