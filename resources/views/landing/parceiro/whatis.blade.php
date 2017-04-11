@@ -14,7 +14,7 @@
                 <img class="custom-mini-image" src="{{ asset('img/icons/network (1).png') }}">
                 <h3 class="custom-color-white"><strong>Conectamos</strong></h3>
                 <p class="custom-color-white" align="justify">
-                    Somos uma plataforma online onde parceiros podem cadastrar e disponibilizar seus produtos, para
+                    Somos uma plataforma online onde parceiros podem disponibilizar seus produtos, para
                     que pessoas interessadas em montar seu negócio virtual, escolham os produtos e recebam
                     lojas virtuais completas para vende-los e receber comissões. Nos somos uma ferramenta que cuida
                     de todo o canal e interação das vendas entre fornecedores e revendedores.
