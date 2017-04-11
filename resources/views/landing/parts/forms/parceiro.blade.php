@@ -9,7 +9,7 @@
     <title>Vende aí!</title>
 
     <!-- Meta -->
-    @include('parts.landing.parts.meta')
+    @include('landing.parts.meta')
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="logo-mini.png">
