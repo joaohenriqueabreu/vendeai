@@ -10,8 +10,8 @@
 <!-- Metis Menu Js -->
 <script src="{{ asset('js/jquery.metisMenu.js') }}"></script>
 <!-- Morris Chart Js -->
-<script src="{{ asset('js/morris/raphael-2.1.0.min.js') }}"></script>
-<script src="{{ asset('js/morris/morris.js') }}"></script>
+{{--<script src="{{ asset('js/morris/raphael-2.1.0.min.js') }}"></script>--}}
+{{--<script src="{{ asset('js/morris/morris.js') }}"></script>--}}
 <!-- Custom Js -->
 <script src="{{ asset('js/custom-scripts.js') }}"></script>
 
@@ -24,7 +24,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
 <script>
-    var app = angular.module('master', ['ngMaterial', 'ngMessages']);
+    var angular = angular.module('master', ['ngMaterial', 'ngMessages']);
 </script>
 
 <script src="{{ asset('js/angular/master.js') }}"></script>

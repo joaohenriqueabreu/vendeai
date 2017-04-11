@@ -44,14 +44,16 @@
                     <a href="{{ route('resellers.products.match', [$reseller->id, $product->id]) }}"
                        class="custom-product-card">
                         <div class="panel panel-primary text-center no-boder bg-color-green">
-                            <div class="panel-heading back-footer-blue" align="left">
-                                @if($product->hasReseller($reseller->id))
-                                    <small>Produto adicionado! Clique para remover de sua loja</small>
-                                @else
+                            @if($product->hasReseller($reseller->id))
+                                <div class="panel-heading back-footer-red" align="left">
+                                    <small>Clique para remover de sua loja</small>
+                                </div>
+                            @else
+                                <div class="panel-heading back-footer-blue" align="left">
                                     <small>Clique para adicionar a sua loja</small>
-                                @endif
+                                </div>
+                            @endif
 
-                            </div>
                             <div class="panel-body custom-section">
 
                                 <img src="{{ $product->url }}" class="custom-mini-image"/>
@@ -60,7 +62,7 @@
                                     Vendido por <span
                                             style="text-decoration: underline">{{ $product->provider->name }}</span>
                                 </h6>
-                                <h6>
+                                <h6 align="left">
                                     <small>{{ $product->description }}</small>
                                 </h6>
                             </div>

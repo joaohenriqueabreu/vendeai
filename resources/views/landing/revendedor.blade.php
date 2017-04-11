@@ -32,7 +32,7 @@
     <div class="" style="">
 
         @include('landing.revendedor.main')
-        @include('landing.revendedor.message')
+        @include('landing.revendedor.whatis')
         @include('landing.revendedor.howitworks')
         @include('landing.revendedor.important')
         @include('landing.revendedor.register')

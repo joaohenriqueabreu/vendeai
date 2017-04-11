@@ -9,7 +9,7 @@
             </div>
 
             <div flex layout="row" layout-align="end center">
-                <a href="#" class="" type="button">
+                <a href="https://www.facebook.com/vendeaioficial/" class="" type="button">
                     <i class="fa fa-facebook rounded-x custom-color-dark-blue icon-custom icon-line icon-color-dark-blue custom-hover-color-white"></i>
                 </a>
 

@@ -4,17 +4,18 @@
             <div layout="row">
 
                 <h2 align="center" class="custom-heading">
-                    <strong class="custom-color-dark-blue">
-                        Aumente suas vendas com a <span class="custom-brand">Vende aí!</span>
+                    <strong class="custom-color-green">
+                        Aumente suas vendas com a <br><span class="custom-brand-green">Vende aí!</span>
                     </strong>
                 </h2>
             </div>
 
             <div class="custom-padding-20" style="padding-bottom: 150px !important">
                 <a href="#o-que-e"
-                   class="btn-u rounded-5x btn-u-custom-green custom-hover-bg-dark-blue custom-bg-dark-blue custom-hover-color-gray btn-u-lg"
+                   class="btn-u rounded-5x btn-u-custom-green
+                    custom-hover-bg-white custom-bg-white custom-hover-color-green btn-u-lg"
                    type="button">
-                    <h4 class="custom-color-white custom-hover-color-gray"><strong>Vamos lá!</strong>
+                    <h4 class="custom-color-green custom-hover-color-green"><strong>Vamos lá!</strong>
                     </h4>
                 </a>
                 </strong>

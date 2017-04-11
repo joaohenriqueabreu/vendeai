@@ -33,8 +33,9 @@
     <div class="" style="">
 
         @include('landing.parceiro.main')
-        @include('landing.parceiro.message')
+        @include('landing.parceiro.whatis')
         @include('landing.parceiro.howitworks')
+        @include('landing.parceiro.important')
         @include('landing.parceiro.register')
         @include('landing.parceiro.franchising')
         @include('landing.parceiro.register2')

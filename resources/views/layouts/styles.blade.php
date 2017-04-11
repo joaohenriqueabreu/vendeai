@@ -3,7 +3,7 @@
 <!-- FontAwesome Styles-->
 <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" />
 <!-- Morris Chart Styles-->
-<link href="{{ asset('js/morris/morris-0.4.3.min.css') }}" rel="stylesheet" />
+{{--<link href="{{ asset('js/morris/morris-0.4.3.min.css') }}" rel="stylesheet" />--}}
 <!-- Dream Styles-->
 <link href="{{ asset('css/dream-styles.css') }}" rel="stylesheet" />
 {{-- Custom --}}
