@@ -18,6 +18,10 @@
                     que pessoas interessadas em montar seu negócio virtual, escolham os produtos e recebam
                     lojas virtuais completas para vender e receber comissões. Nós somos uma ferramenta que cuida
                     de todo o canal e interação das vendas entre fornecedores e revendedores.
+                    {{--Somos uma plataforma online onde de um lado parceiros podem cadastrar e disponibilizar seus--}}
+                    {{--produtos, para que do outro lado, pessoas interessadas em montar seu negócio virtual possam escolher--}}
+                    {{--os produtos que farão parte de uma loja virtual. Nós disponibilizamos a loja e cuidaremos de todo o canal--}}
+                    {{--e interação das vendas entre fornecedores e revendedores.--}}
                 </p>
             </div>
 
@@ -71,7 +75,8 @@
                     forma rápida, fácil e gratuitamente
                     sem a necessidade de ter os produtos, investindo seu tempo nas vendas e
                     recebendo comissões de acordo com seu sucesso! Que tal montar uma loja para vender cervejas
-                    artesanais, bicicleta, água aromatizada, artigos para pets, assesórios de celular, roupas, e por aí vai
+                    artesanais, bicicleta, água aromatizada, artigos para pets, assesórios de celular, roupas, e por aí
+                    vai
                     ...
                 </p>
                 <h3 class="custom-color-white custom-home-text" align="center">

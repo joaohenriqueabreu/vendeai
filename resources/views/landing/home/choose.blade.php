@@ -11,7 +11,7 @@
             <div layout="column" layout-align="center center">
                 <div class="custom-home-text">
                     <h2 align="center" class="custom-color-white custom-padding-20">
-                        <strong> Abrir seu negócio <br> virtual </strong>
+                        <strong> Você está buscando renda extra? </strong>
                     </h2>
 
                     <p align="justify" class="custom-color-white"><strong>
