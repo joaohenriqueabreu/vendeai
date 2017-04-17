@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Auth;
 use App\Product;
 use App\Reseller;
 
-
 class ResellerController extends Controller
 {
     /**
@@ -48,7 +47,7 @@ class ResellerController extends Controller
         $reseller->fill($request->all());
         $reseller->save();
 
-        return redirect()->route('products.index');
+        return redirect()->route('resellers.products.index');
     }
 
     /**
@@ -127,87 +126,49 @@ class ResellerController extends Controller
 //        }
     }
 
-    public function search(Request $request, $id)
-    {
-        $reseller = Reseller::find($id);
-
-        // Inicializa a query
-        $query = Product::whereRaw('1');
-
-        if (isset($request->q)) {
-            $query->where('name', 'like', '%' . $request->q . '%')->orWhere('description', 'like', '%' . $request->q . '%');
-        }
-
-        $products = $query->paginate(16);
-
-        return view('resellers.products.search', ['reseller' => $reseller, 'products' => $products]);
-    }
-
-    public function searchReset(Request $request, $id)
-    {
-        $reseller = Reseller::find($id);
-
-        $products = Product::paginate(16);
-
-        return view('resellers.products.search', ['reseller' => $reseller, 'products' => $products]);
-    }
-
-    public function searchNew(Request $request, $id)
-    {
-        $reseller = Reseller::find($id);
-
-        $not_assigned = $reseller->products()->pluck('product_id')->toArray();
-
-        // Inicializa a query
-        $query = Product::whereNotIn('id', $not_assigned);
-
-        $products = $query->paginate(16);
-
-        return view('resellers.products.search', ['reseller' => $reseller, 'products' => $products]);
-    }
-
-    public function match($reseller_id, $product_id, Request $request)
+    public function requestStore($reseller_id)
     {
         $reseller = Reseller::find($reseller_id);
-        $product = Product::find($product_id);
+        $user = Auth::user();
 
-        // Se já existe faz um detach, senão attach
-        if ($product->hasReseller($reseller->id))
-            return $this->unmatch($reseller_id, $product_id, $request);
+        if(MailController::storeNotification($reseller_id, 'new'))
+            return redirect()->route('resellers.stores.requested', $reseller->id);
         else
-            $product->resellers()->attach($reseller_id);
-
-
-        // Inicializa a query
-        $query = Product::whereRaw('1');
-
-        if (isset($request->q)) {
-            $query->where('name', 'like', '%' . $request->q . '%')->orWhere('description', 'like', '%' . $request->q . '%');
-        }
-
-        $products = $query->paginate(16);
-        return redirect()->route('resellers.products.search', ['reseller' => $reseller, 'products' => $products]);
+            return redirect()->route('resellers.products.index', $reseller->id);
     }
 
-    public function unmatch($reseller_id, $product_id, Request $request)
+    public function updateStore($reseller_id)
     {
         $reseller = Reseller::find($reseller_id);
-        $product = Product::find($product_id);
+        $user = Auth::user();
 
-        // Se já existe faz um attach, senão attach
-        if ($product->hasReseller($reseller->id))
-            $product->resellers()->detach($reseller_id);
+        if(MailController::storeNotification($reseller_id, 'update'))
+            return redirect()->route('resellers.stores.updated', $reseller->id);
         else
-            return $this->match($reseller_id, $product_id, $request);
+            return redirect()->route('resellers.products.index', $reseller->id);
+    }
 
-        // Inicializa a query
-        $query = Product::whereRaw('1');
+    public function storeRequested($reseller_id)
+    {
+        $reseller = Reseller::find($reseller_id);
+        $user = Auth::user();
 
-        if (isset($request->q)) {
-            $query->where('name', 'like', '%' . $request->q . '%')->orWhere('description', 'like', '%' . $request->q . '%');
-        }
+        return view('resellers.stores.requested', array('reseller' => $reseller, 'user' => $user));
+    }
 
-        $products = $query->paginate(16);
-        return redirect()->route('resellers.products.search', ['reseller' => $reseller, 'products' => $products]);
+    public function storeUpdated($reseller_id)
+    {
+        $reseller = Reseller::find($reseller_id);
+        $user = Auth::user();
+
+        return view('resellers.stores.updated', array('reseller' => $reseller, 'user' => $user));
+    }
+
+    public function storeInfo($reseller_id)
+    {
+        $reseller = Reseller::find($reseller_id);
+        $user = Auth::user();
+
+        return view('resellers.stores.info', array('reseller' => $reseller, 'user' => $user));
     }
 }

@@ -40,7 +40,7 @@
 
     <div class="form-group">
         {{ Form::label('provider_id', 'Fornecedor') }}
-        {{ Form::select('provider_id', $providers, $default) }}
+        {{ Form::select('provider_id', $providers, $provider->id) }}
     </div>
 
     {{ Form::submit('Salvar', array('class' => 'btn btn-primary')) }}

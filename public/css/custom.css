@@ -19,6 +19,11 @@
     max-width: 100px !important;
 }
 
+.custom-micro-image{
+    max-height: 30px !important;
+    max-width: 30px !important;
+}
+
 .custom-login-navbar {
     background: #f8f8f8 !important;
     margin-bottom: 0px !important;
@@ -30,4 +35,61 @@
 
 .custom-product-card{
     text-decoration: none !important;
+}
+
+.custom-brand-small {
+    font-weight: bolder !important;
+    font-style: italic !important;
+    /*font-size: xx-large !important;*/
+    color: var(--brand-blue) !important;
+    /*font-family: "Franklin Gothic Heavy";*/
+    font-family: "Saladfont" !important;
+}
+
+.custom-brand-green {
+    font-weight: bolder;
+    font-style: italic !important;
+    font-size: xx-large;
+    color: var(--brand-green) !important;
+    /*font-family: "Franklin Gothic Heavy";*/
+    font-family: "Saladfont" !important;
+}
+
+.custom-brand-green-small {
+    font-weight: bolder;
+    font-style: italic !important;
+    /*font-size: xx-large;*/
+    color: var(--brand-green) !important;
+    /*font-family: "Franklin Gothic Heavy";*/
+    font-family: "Saladfont" !important;
+}
+
+.custom-brand-white {
+    font-weight: bolder;
+    font-style: italic !important;
+    font-size: xx-large;
+    color: white !important;
+    /*font-family: "Franklin Gothic Heavy";*/
+    font-family: "Saladfont" !important;
+}
+
+.custom-brand-white-small {
+    font-weight: bolder;
+    font-style: italic !important;
+    /*font-size: xx-large;*/
+    color: white !important;
+    /*font-family: "Franklin Gothic Heavy";*/
+    font-family: "Saladfont" !important;
+}
+
+.custom-brand:hover {
+    /*font-weight: bolder;*/
+    /*font-size: xx-large;*/
+    /*color: var(--brand-blue) !important;*/
+    text-decoration: none !important;
+}
+
+@font-face {
+    font-family: 'Saladfont'; /*a name to be used later*/
+    src: url('../fonts/font12.ttf'); /*URL to font*/
 }

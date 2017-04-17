@@ -28,7 +28,7 @@
 <body>
 {{--<div id="app">--}}
 <div id="wrapper" class="custom-background-black">
-    @include('layouts.header')
+    {{--@include('layouts.header')--}}
 
     @include('layouts.sidebar')
 

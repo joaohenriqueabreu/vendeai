@@ -3,7 +3,11 @@
         <ul class="nav" id="main-menu">
 
             <li>
-                <a class="active-menu" href="\"><i class="fa fa-dashboard"></i> Home </a>
+                <a class="active-menu" href="\">
+                    {{--<i class="fa fa-dashboard"></i>--}}
+                    <img class="custom-micro-image" src="{{ asset('img/logo/logo-mini.png') }}">
+                    <span class="custom-brand-white-small">Vende aí</span>
+                </a>
             </li>
 
             {{-- Configurações para o menu de fornecedores --}}
@@ -21,15 +25,21 @@
                     <a href="#"><i class="fa fa-sitemap"></i> Fornecedores <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="{{ route('products.create') }}"><i class="fa fa-bookmark-o"></i> Novo produto </a>
+                            <a href="{{ route('providers.products.create', $user->provider->id) }}"><i class="fa fa-check"></i> Novo produto </a>
                         </li>
 
                         <li>
-                            <a href="{{ route('providers.products', $user->provider->id) }}"> Vendas </a>
+                            <a href="{{ route('providers.products.index', $user->provider->id) }}">
+                                <i class="fa fa-tags"></i>
+                                Vendas
+                            </a>
                         </li>
 
                         <li>
-                            <a href="{{ route('providers.products', $user->provider->id) }}">Lista de Produtos</a>
+                            <a href="{{ route('providers.products.index', $user->provider->id) }}">
+                                <i class="fa fa-table"></i>
+                                Lista de Produtos
+                            </a>
                         </li>
                     </ul>
                 </li>
@@ -50,17 +60,17 @@
                     <a href="#"><i class="fa fa-share-square"></i> Área do Revendedor <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="{{ route('resellers.products.search', $user->reseller->id) }}"> <i class="fa fa-search"></i> Encontrar produtos
+                            <a href="{{ route('resellers.products.search', [$user->reseller->id, null]) }}"> <i class="fa fa-search"></i> Encontrar produtos
                             </a>
                         </li>
 
                         <li>
-                            <a href="{{ route('resellers.products', $user->reseller->id) }}"><i
+                            <a href="{{ route('resellers.products.index', $user->reseller->id) }}"><i
                                         class="fa fa-shopping-cart"></i> Gerenciar loja </a>
                         </li>
 
                         <li>
-                            <a href="{{ route('resellers.products', $user->reseller->id) }}"> <i
+                            <a href="{{ route('resellers.products.index', $user->reseller->id) }}"> <i
                                         class="fa fa-bar-chart-o"></i> Relatório </a>
                         </li>
 

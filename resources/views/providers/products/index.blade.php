@@ -21,7 +21,7 @@
                             Gestão de produtos
                         </div>
                         <div class="col-md-4">
-                            <a href="{{ route('provider.products.create') }}?pid={{ $provider->id }}" type="button"
+                            <a href="{{ route('providers.products.create', $provider->id) }}" type="button"
                                class="btn btn-success"><i class="fa fa-plus"></i>
                                 Adicionar</a>
                         </div>
@@ -63,21 +63,21 @@
                                         <td>{{ $product->created_at }} </td>
                                         <td>{{ $product->updated_at }} </td>
                                         <td align="center">
-                                            {{ Form::open(array('route' => array('products.edit', $product->id), 'method' => 'GET')) }}
-                                            {{ Form::button('<i class="fa fa-edit"></i>', ['type'=> 'submit', 'class' => 'btn btn-default', 'href' => route('providers.edit', $provider->id)]) }}
+                                            {{ Form::open(array('route' => array('providers.products.edit', $provider->id, $product->id), 'method' => 'GET')) }}
+                                            {{ Form::button('<i class="fa fa-edit"></i>', array('type'=> 'submit', 'class' => 'btn btn-default', 'href' => route('providers.products.edit', array($provider->id, $product->id)))) }}
                                             {{ Form::close() }}
 
                                         </td>
 
                                         <td align="center">
-                                            {{ Form::open(array('route' => array('products.show', $product->id), 'method' => 'GET')) }}
-                                            {{ Form::button('<i class="fa fa-eye"></i>', ['type'=> 'submit', 'class' => 'btn btn-warning', 'href' => route('providers.edit', $provider->id)]) }}
+                                            {{ Form::open(array('route' => array('providers.products.show', $provider->id, $product->id), 'method' => 'GET')) }}
+                                            {{ Form::button('<i class="fa fa-eye"></i>', array('type'=> 'submit', 'class' => 'btn btn-warning', 'href' => route('providers.edit', array($provider->id, $product->id)))) }}
                                             {{ Form::close() }}
 
                                         </td>
 
                                         <td align="center">
-                                            {{ Form::open(array('route' => array('products.destroy', $product->id), 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()')) }}
+                                            {{ Form::open(array('route' => array('providers.products.destroy', $provider->id, $product->id), 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()')) }}
                                             {{ Form::button('<i class="fa fa-times"></i>', ['type'=> 'submit', 'class' => 'btn btn-danger']) }}
                                             {{ Form::close() }}
                                         </td>

@@ -9,7 +9,22 @@ class PageController extends Controller
 {
     public function home()
     {
-        return view('home');
+//        return view('home');
+        $user = Auth::user();
+
+        if(isset($user->admin)){
+            return redirect()->route('providers.products.index', $user->provider->id);
+        }
+
+        if(isset($user->provider)){
+            return redirect()->route('providers.products.index', $user->provider->id);
+        }
+
+        if(isset($user->reseller)){
+            return redirect()->route('resellsers.products.index', $user->reseller->id);
+        }
+
+        return redirect()->route('pages.profile');
     }
 
     public function profile()
@@ -19,7 +34,7 @@ class PageController extends Controller
 
     public function account()
     {
-        return view('auth.account');
+        return view('auth.profile');
     }
 
     public function logout()
