@@ -94,6 +94,12 @@ class ResellerProductController extends Controller
 
     public function search(Request $request, $reseller_id, $query_text = null)
     {
+        if($query_text == "new")
+            return $this->searchNew($request, $reseller_id);
+
+        if($query_text == "reset")
+            return $this->searchReset($request, $reseller_id);
+
         $reseller = Reseller::find($reseller_id);
 
         // Inicializa a query

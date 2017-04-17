@@ -22,7 +22,7 @@
 
             @if($allow_provider_access)
                 <li class="active">
-                    <a href="#"><i class="fa fa-sitemap"></i> Fornecedores <span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-sitemap"></i> Área do Fornecedores <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="{{ route('providers.products.create', $user->provider->id) }}"><i class="fa fa-check"></i> Novo produto </a>

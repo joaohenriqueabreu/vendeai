@@ -15,7 +15,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div>Nome da loja: {{ $reseller->name }}</div>
-                            <div>Endereço: {{ $reseller->address }}</div>
+                            <div>Email: {{ $reseller->email }}</div>
                             <div>Última atualização: {{ $reseller->updated_at }}<br></div>
                             <div>&nbsp;</div>
 
@@ -23,7 +23,7 @@
                             @if(isset($reseller->store_url))
                                 <a href="{{ $reseller->store_url }}">{{ $reseller->store_url }}</a>
                             @else
-                                Loja ainda não solicitada!
+                                <span class="badge badge-red">Loja ainda não solicitada!</span>
                             @endif
 
                         </div>
@@ -84,7 +84,7 @@
                                 <th>Comissão</th>
                                 <th>Venda</th>
                                 <th>Fornecedor</th>
-                                <th>Criação</th>
+                                {{--<th>Criação</th>--}}
                                 <th>Atualização</th>
                                 {{--<th>Editar</th>--}}
                                 {{--<th>Ver</th>--}}
@@ -106,7 +106,7 @@
                                         <td>R$ {{ $product->payment }} </td>
                                         <td>R$ {{ $product->price + $product->payment }} </td>
                                         <td> {{ $product->provider->name }} </td>
-                                        <td>{{ $product->created_at }} </td>
+                                        {{--<td>{{ $product->created_at }} </td>--}}
                                         <td>{{ $product->updated_at }} </td>
 
                                         {{--<td align="center">--}}
