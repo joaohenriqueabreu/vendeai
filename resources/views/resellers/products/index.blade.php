@@ -16,14 +16,21 @@
                         <div class="col-md-12">
                             <div>Nome da loja: {{ $reseller->name }}</div>
                             <div>Email: {{ $reseller->email }}</div>
+                            <div>CPF / CNPJ: {{ $reseller->document }}</div>
                             <div>Última atualização: {{ $reseller->updated_at }}<br></div>
                             <div>&nbsp;</div>
 
                             Link para a loja:
                             @if(isset($reseller->store_url))
-                                <a href="{{ $reseller->store_url }}">{{ $reseller->store_url }}</a>
+                                <a href="#"
+                                   onclick="window.open('{{ $reseller->store_url }}');">{{ $reseller->store_url }}</a>
                             @else
-                                <span class="badge badge-red">Loja ainda não solicitada!</span>
+                                @if($reseller->status == "pending")
+                                    <span class="badge badge-red">Loja ainda não solicitada!</span>
+                                @else
+                                    <span class="badge badge-red">Loja em construção</span>
+                                @endif
+
                             @endif
 
                         </div>
@@ -31,7 +38,7 @@
                         <div>&nbsp;</div>
 
                         <div class="col-md-12">
-                            @if(!isset($reseller->store_url))
+                            @if(!isset($reseller->store_url) && $reseller->status == "pending")
                                 <a href="{{ route('resellers.stores.new', $reseller->id) }}" class="btn btn-info">
                                     <i class="fa fa-check-circle"></i>
                                     Pedir sua loja
@@ -88,6 +95,7 @@
                                 <th>Atualização</th>
                                 {{--<th>Editar</th>--}}
                                 {{--<th>Ver</th>--}}
+                                <th>Nova venda</th>
                                 <th>Remover</th>
                             </tr>
                             </thead>
@@ -110,11 +118,14 @@
                                         <td>{{ $product->updated_at }} </td>
 
                                         {{--<td align="center">--}}
-                                        {{--{{ Form::open(array('route' => array('products.show', $product->id), 'method' => 'GET')) }}--}}
-                                        {{--{{ Form::button('<i class="fa fa-eye"></i>', ['type'=> 'submit', 'class' => 'btn btn-warning', 'href' => route('resellers.edit', $reseller->id)]) }}--}}
-                                        {{--{{ Form::close() }}--}}
-                                        {{----}}
+{{--                                            {{ Form::open(array('route' => array('resellers.products.sales.create', $reseller->id, $product->id), 'method' => 'GET')) }}--}}
+{{--                                            {{ Form::button('<i class="fa fa-eye"></i>', ['type'=> 'submit', 'class' => 'btn btn-warning', 'href' => route('resellers.products.sales.create', array($reseller->id, $product->id))]) }}--}}
+{{--                                            {{ Form::close() }}--}}
                                         {{--</td>--}}
+
+                                        <td align="center">
+                                            <a class="btn btn-success" href="{{ route('resellers.products.sales.create', array($reseller->id, $product->id)) }}"><i class="fa fa-plus"></i></a>
+                                        </td>
 
                                         <td align="center">
                                             {{ Form::open(array('route' => array('resellers.products.unmatch', $reseller->id, $product->id), 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()')) }}

@@ -144,7 +144,9 @@ border-top: 0px solid #fff;
     border-top: 0px solid #fff;
 }
  .back-footer-red {
-background-color: #F0433D !important;
+/*background-color: #F0433D !important;*/
+/*background-color: #d2322d !important;*/
+background-color: #d9534f !important;
 color:#fff;
 border-top: 0px solid #fff;
 }

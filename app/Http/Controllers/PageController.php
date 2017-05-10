@@ -9,7 +9,6 @@ class PageController extends Controller
 {
     public function home()
     {
-//        return view('home');
         $user = Auth::user();
 
         if(isset($user->admin)){
@@ -21,7 +20,7 @@ class PageController extends Controller
         }
 
         if(isset($user->reseller)){
-            return redirect()->route('resellsers.products.index', $user->reseller->id);
+            return redirect()->route('resellers.products.index', $user->reseller->id);
         }
 
         return redirect()->route('pages.profile');
@@ -29,12 +28,17 @@ class PageController extends Controller
 
     public function profile()
     {
-        return view('auth.profile');
+        $user = Auth::user();
+        $has_provider_account = isset($user->provider);
+        $has_reseller_account = isset($user->reseller);
+        $has_admin_account = isset($user->admin);
+
+        return view('auth.profile', array('user' => $user,'has_provider_account' => $has_provider_account, 'has_reseller_account' => $has_reseller_account, 'has_admin_account' => $has_admin_account));
     }
 
     public function account()
     {
-        return view('auth.profile');
+        return redirect()->route('pages.profile');
     }
 
     public function logout()
@@ -67,6 +71,17 @@ class PageController extends Controller
     public function newProvider()
     {
         return view('landing.parts.forms.parceiro');
+    }
+
+    /// Error
+    public function notFound()
+    {
+        return $this->home();
+    }
+
+    public function unauthorized()
+    {
+        return $this->home();
     }
 
 }

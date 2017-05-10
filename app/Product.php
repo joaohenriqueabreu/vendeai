@@ -34,6 +34,11 @@ class Product extends Model
         return $this->belongsToMany('App\Reseller');
     }
 
+    public function sales()
+    {
+        return $this->hasMany('App\Sale');
+    }
+
     public function hasReseller($id)
     {
         return $this->resellers()->find($id);

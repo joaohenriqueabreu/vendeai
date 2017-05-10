@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ config('app.locale') }}" ng-app="selladd">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,16 +18,14 @@
 
 <!-- Scripts -->
     <script>
-        window.Laravel = {!! json_encode([
-            'csrfToken' => csrf_token(),
-        ]) !!};
+        window.Laravel = {!! json_encode(['csrfToken' => csrf_token(),]) !!};
     </script>
 
     @include('layouts.styles')
 </head>
 <body>
 {{--<div id="app">--}}
-<div id="wrapper" class="custom-background-black">
+<div id="wrapper" class="custom-background-black" ng-controller="dashboard" ng-cloak>
     {{--@include('layouts.header')--}}
 
     @include('layouts.sidebar')

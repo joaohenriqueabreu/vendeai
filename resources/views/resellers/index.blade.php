@@ -2,6 +2,8 @@
 
 @section('content')
 
+    @if(isset($user->admin))
+
     <div class="row">
         <div class="col-md-12">
             <h1 class="page-header">
@@ -10,7 +12,6 @@
         </div>
 
         <div class="col-md-12">
-            <!-- Advanced Tables -->
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="row">
@@ -30,10 +31,10 @@
                             <thead>
                             <tr>
                                 <th>Nome</th>
-                                <th>Email</th>
-                                <th>Endereço(s)</th>
-                                <th>Telefone</th>
-                                <th>Título</th>
+                                <th>Info</th>
+                                {{--<th>Endereço(s)</th>--}}
+                                {{--<th>Telefone</th>--}}
+                                <th>Loja</th>
                                 <th>Criação</th>
                                 <th>Atualização</th>
                                 <th>Editar</th>
@@ -50,10 +51,21 @@
                                         @endif
 
                                         <td>{{ $reseller->name }} </td>
-                                        <td>{{ $reseller->email }} </td>
-                                        <td>{{ $reseller->address }} </td>
-                                        <td>{{ $reseller->phone }} </td>
-                                        <td>{{ $reseller->title }} </td>
+                                        <td>
+                                            <a href="{{ route('resellers.show',$reseller->id)  }}"
+                                               class="btn btn-default"><i class="fa fa-info-circle"></i>
+                                            </a>
+                                        </td>
+                                        <td align="center">
+                                            @if(isset($reseller->store_url))
+                                                <a href="#" onclick="window.open('{{  $reseller->store_url }}');"
+                                                   class="btn btn-primary">
+                                                    <i class="fa fa-globe"></i>
+                                                </a>
+                                            @else
+                                                <span class="badge">Pendente</span>
+                                            @endif
+                                        </td>
                                         <td>{{ $reseller->created_at }} </td>
                                         <td>{{ $reseller->updated_at }} </td>
                                         <td align="center">
@@ -63,14 +75,14 @@
 
                                         </td>
                                         <td align="center">
-                                            {{ Form::open(array('route' => array('resellers.products', $reseller->id), 'method' => 'GET')) }}
+                                            {{ Form::open(array('route' => array('resellers.products.index', $reseller->id), 'method' => 'GET')) }}
                                             {{ Form::button('<i class="fa fa-barcode"></i>', ['type'=> 'submit', 'class' => 'btn btn-primary', 'href' => route('resellers.edit', $reseller->id)]) }}
                                             {{ Form::close() }}
                                         </td>
                                         <td align="center">
-                                            {{ Form::open(array('route' => array('resellers.destroy', $reseller->id), 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()')) }}
-                                            {{ Form::button('<i class="fa fa-times"></i>', ['type'=> 'submit', 'class' => 'btn btn-danger']) }}
-                                            {{ Form::close() }}
+{{--                                            {{ Form::open(array('route' => array('resellers.destroy', $reseller->id), 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()')) }}--}}
+{{--                                            {{ Form::button('<i class="fa fa-times"></i>', ['type'=> 'submit', 'class' => 'btn btn-danger']) }}--}}
+                                            {{--{{ Form::close() }}--}}
                                         </td>
                                     </tr>
 
@@ -80,9 +92,16 @@
                     </div>
 
                 </div>
+                <div class="panel-footer">
+                    {{ $resellers->links() }}
+                </div>
             </div>
             <!--End Advanced Tables -->
         </div>
     </div>
+
+    @else
+        <h1><i class="fa fa-close"></i> Ops! Essa página não está disponível no momento</h1>
+    @endif
 
 @endsection

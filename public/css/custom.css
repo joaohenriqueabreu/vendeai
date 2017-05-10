@@ -14,9 +14,18 @@
     padding: 20px 20px 20px 20px !important;
 }
 
+.custom-mini-section{
+    margin: 5px 5px 5px 5px !important;
+}
+
 .custom-mini-image{
     max-height: 100px !important;
     max-width: 100px !important;
+}
+
+.custom-instr-image{
+    max-height: 1000px !important;
+    max-width: 1000px !important;
 }
 
 .custom-micro-image{
@@ -89,7 +98,16 @@
     text-decoration: none !important;
 }
 
+.custom-hidden {
+    display: none !important;
+}
+
+.custom-show{
+    display: block !important;
+}
+
 @font-face {
     font-family: 'Saladfont'; /*a name to be used later*/
     src: url('../fonts/font12.ttf'); /*URL to font*/
 }
+

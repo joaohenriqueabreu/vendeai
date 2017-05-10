@@ -4,15 +4,22 @@
 
             <li>
                 <a class="active-menu" href="\">
-                    {{--<i class="fa fa-dashboard"></i>--}}
                     <img class="custom-micro-image" src="{{ asset('img/logo/logo-mini.png') }}">
                     <span class="custom-brand-white-small">Vende aí</span>
                 </a>
             </li>
 
+            <?php $user = Auth::user(); ?>
+
+            <li align="left">
+                <a href="{{ route('pages.profile') }}">
+                    <i class="fa fa-user"></i>
+                    {{ $user->name }}
+                </a>
+            </li>
+
             {{-- Configurações para o menu de fornecedores --}}
             <?php
-            $user = Auth::user();
 
             if (isset($user)) {
                 $allow_provider_access = isset($user->provider);
@@ -22,7 +29,7 @@
 
             @if($allow_provider_access)
                 <li class="active">
-                    <a href="#"><i class="fa fa-sitemap"></i> Área do Fornecedores <span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-sitemap"></i> Área do Fornecedor <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="{{ route('providers.products.create', $user->provider->id) }}"><i class="fa fa-check"></i> Novo produto </a>
@@ -70,7 +77,7 @@
                         </li>
 
                         <li>
-                            <a href="{{ route('resellers.products.index', $user->reseller->id) }}"> <i
+                            <a href="{{ route('resellers.sales.index', $user->reseller->id) }}"> <i
                                         class="fa fa-bar-chart-o"></i> Relatório </a>
                         </li>
 
@@ -93,20 +100,24 @@
                     <a href="#"><i class="fa fa-cog"></i> Administração <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="{{ route('providers.index') }}">Fornecedores</a>
+                            <a href="{{ route('providers.index') }}"><i class="fa fa-sitemap"></i>Fornecedores</a>
                         </li>
                         <li>
-                            <a href="{{ route('providers.create') }}">Revendedores</a>
+                            <a href="{{ route('resellers.index') }}"><i class="fa fa-share-square"></i>Revendedores</a>
                         </li>
                         <li>
-                            <a href="{{ route('providers.create') }}">Administradores</a>
+                            <a href="{{ route('admin.index') }}"><i class="fa fa-users"></i>Usuários</a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('admin.mvp.info') }}"><i class="fa fa-globe"></i>MVP</a>
                         </li>
                     </ul>
                 </li>
             @endif
 
             <li>
-                <a type="submit" href="{{ route('pages.account') }}"><i class="fa fa-user"></i> Conta </a>
+                <a type="submit" href="{{ route('pages.account') }}"><i class="fa fa-key"></i> Conta </a>
             </li>
 
             <li>

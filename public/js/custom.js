@@ -201,11 +201,23 @@
 
 function sendFile(url){
     $("input[name=url]").val(url);
+    // $("image[id=img_preview]").src(url);
+    $("#img_preview").attr("src",url);
+    $("#img_preview").attr("class","custom-mini-image custom-section custom-show");
 }
 
 function confirmDelete()
 {
     var x = confirm("Tem certeza que deseja apagar esse registro?");
+    if (x)
+        return true;
+    else
+        return false;
+}
+
+function confirmAdmin()
+{
+    var x = confirm("Tem certeza que deseja tornar esse usuário administrador?");
     if (x)
         return true;
     else

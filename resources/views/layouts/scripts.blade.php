@@ -3,10 +3,6 @@
 <!-- Bootstrap Js -->
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
-{{-- Filestack --}}
-<script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
-{{ Html::script(asset('js/custom.js')) }}
-
 <!-- Metis Menu Js -->
 <script src="{{ asset('js/jquery.metisMenu.js') }}"></script>
 <!-- Morris Chart Js -->
@@ -23,9 +19,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
+{{-- Filestack --}}
+<script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+{{--{{ Html::script(asset('js/angular/lib/filepicker.min.js')) }}--}}
+{{--{{ Html::script(asset('js/angular/lib/angular_filepicker.min.js')) }}--}}
+
+{{ Html::script(asset('js/custom.js')) }}
+
 <script>
-    var angular = angular.module('master', ['ngMaterial', 'ngMessages']);
+    var app = angular.module('selladd', ['ngMaterial', 'ngMessages']);
 </script>
 
-<script src="{{ asset('js/angular/master.js') }}"></script>
+<script src="{{ asset('js/angular/controllers/master.js') }}"></script>
+<script src="{{ asset('js/angular/controllers/dashboard.js') }}"></script>
 

@@ -29,10 +29,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
 <script>
-    var angular = angular.module('selladd', ['ngMaterial', 'ngMessages']);
+    var app = angular.module('selladd', ['ngMaterial', 'ngMessages']);
 </script>
 
-<script src="{{ asset('js/angular/master.js') }}"></script>
+<script src="{{ asset('js/angular/controllers/master.js') }}"></script>
 
 <script>
     jQuery(document).ready(function () {

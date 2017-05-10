@@ -11,7 +11,7 @@
     </div>
 
     <div class="row">
-        <a href="{{ route('providers.create') }}">
+        <a href="{{ $has_provider_account ? route('providers.edit', $user->provider->id) : route('providers.create') }}">
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="panel panel-primary text-center no-boder bg-color-green">
                     <div class="panel-body">
@@ -24,7 +24,7 @@
             </div>
         </a>
 
-        <a href="{{ route('resellers.create') }}">
+        <a href="{{ $has_reseller_account ? route('resellers.edit', $user->reseller->id) : route('resellers.create') }}">
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="panel panel-primary text-center no-boder bg-color-blue">
                     <div class="panel-body">

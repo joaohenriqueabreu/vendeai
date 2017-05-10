@@ -1,4 +1,4 @@
-angular.controller('master', masterController);
+app.controller('master', masterController);
 
 function masterController ($scope){
     $scope.moreInfo = {
@@ -45,5 +45,5 @@ function masterController ($scope){
                 break;
 
         }
-    }
+    };
 }

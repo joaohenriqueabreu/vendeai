@@ -13,7 +13,7 @@ class Provider extends Model
     //
     use SoftDeletes;
 
-    protected $fillable = ['name', 'email', 'title', 'address', 'phone', 'user_id'];
+    protected $fillable = ['name', 'email', 'title', 'address', 'phone', 'market', 'document', 'user_id'];
 
     protected $dates = ['deleted_at'];
 

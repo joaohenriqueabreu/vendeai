@@ -7,13 +7,14 @@ use Illuminate\Database\Eloquent\softDeletes;
 
 
 use App\User;
+use App\Product;
 
 class Reseller extends Model
 {
     //
     use SoftDeletes;
 
-    protected $fillable = ['name', 'email', 'address', 'phone', 'user_id'];
+    protected $fillable = ['name', 'email', 'address', 'phone', 'document', 'user_id', 'store_name'];
 
     protected $dates = ['deleted_at'];
 
@@ -25,5 +26,10 @@ class Reseller extends Model
     public function user()
     {
         return $this->belongsTo('App\User');
+    }
+
+    public function sales()
+    {
+        return $this->hasMany('App\Sale');
     }
 }
