@@ -25,3 +25,7 @@ function dashboardController($scope){
         destination[7].value = customer[9].value;
     }
 }
+
+app.config(function($locationProvider) {
+    $locationProvider.html5Mode(true);
+});
